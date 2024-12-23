@@ -22,8 +22,8 @@ modules:
       - install -D io.github.gopher64.gopher64.metainfo.xml -t /app/share/metainfo
     sources:
       - type: archive
-        url: https://github.com/gopher64/gopher64/releases/download/v0.1.10/gopher64-linux.zip
-        sha256: cdb18f78d5d02d5909b4c4a25ca829dd8840e52859e444397025d96f0bc3102d
+        url: https://github.com/gopher64/gopher64/releases/download/v0.1.11/gopher64-linux.zip
+        sha256: 6aaaf2670698b694a8e1f409e545f1c63387d304756c176f77123460c13e88b2
         x-checker-data:
           is-main-source: true
           type: json

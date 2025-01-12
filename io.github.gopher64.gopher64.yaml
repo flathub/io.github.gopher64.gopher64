@@ -22,14 +22,27 @@ modules:
       - install -D io.github.gopher64.gopher64.metainfo.xml -t /app/share/metainfo
     sources:
       - type: archive
-        url: https://github.com/gopher64/gopher64/releases/download/v0.1.15/gopher64-linux.zip
-        sha256: 7207d4429fac420e95a693800a6da617c19e1584eb50ee72113edc6ec7d6f499
+        url: https://github.com/gopher64/gopher64/releases/download/v0.1.16/gopher64-x86_64-unknown-linux-gnu.zip
+        sha256: 94df843073d478ff571b973b228416300f714042d9a3310a98e0837c1819c047
+        only-arches:
+          - x86_64
         x-checker-data:
           is-main-source: true
           type: json
           url: https://api.github.com/repos/gopher64/gopher64/releases/latest
           version-query: .tag_name
-          url-query: .assets[] | select(.name|contains("linux")) | .browser_download_url
+          url-query: .assets[] | select(.name|contains("x86_64-unknown-linux-gnu")) | .browser_download_url
+      - type: archive
+        url: https://github.com/gopher64/gopher64/releases/download/v0.1.16/gopher64-aarch64-unknown-linux-gnu.zip
+        sha256: 0e78db1b9546e745bd14b7f1bcba915acd1e5fe5cc7d8fb4e3035a83d1ea2588
+        only-arches:
+          - aarch64
+        x-checker-data:
+          is-main-source: true
+          type: json
+          url: https://api.github.com/repos/gopher64/gopher64/releases/latest
+          version-query: .tag_name
+          url-query: .assets[] | select(.name|contains("aarch64-unknown-linux-gnu")) | .browser_download_url
       - type: file
         url: https://raw.githubusercontent.com/gopher64/gopher64/52caa9cee3d631a34cf5576cf058cb2335fb2d0c/data/gopher64.svg
         sha256: 50f2e2bc3e4c4950e3e3598f109789db35c16873d6298eadb7480f6d4c4877bc

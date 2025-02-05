@@ -6,8 +6,6 @@ command: gopher64
 rename-icon: gopher64
 finish-args:
   - --socket=wayland
-  - --socket=fallback-x11
-  - --share=ipc
   - --socket=pulseaudio
   - --share=network
   - --device=all

@@ -16,15 +16,15 @@ modules:
   - name: gopher64
     buildsystem: simple
     build-commands:
-      - install -Dm755 gopher64 -t /app/bin
+      - install -Dm755 gopher64-linux-* -t /app/bin/gopher64
 
       - install -D gopher64.svg -t /app/share/icons/hicolor/scalable/apps
       - install -D io.github.gopher64.gopher64.desktop -t /app/share/applications
       - install -D io.github.gopher64.gopher64.metainfo.xml -t /app/share/metainfo
     sources:
-      - type: archive
-        url: https://github.com/gopher64/gopher64/releases/download/v1.0.7/gopher64-x86_64-unknown-linux-gnu.zip
-        sha256: a24ea05df4679671ca9d24addf26adbfc9fcddfba7b91907cd26268ad91dd3df
+      - type: file
+        url: https://github.com/gopher64/gopher64/releases/download/v1.0.7/gopher64-linux-x86_64
+        sha256: 52c5ec24b3c1fd40cdd40a947cedac74a846a7a4dce9f3a42ad8664d1fec9822
         only-arches:
           - x86_64
         x-checker-data:
@@ -32,11 +32,11 @@ modules:
           type: json
           url: https://api.github.com/repos/gopher64/gopher64/releases/latest
           version-query: .tag_name
-          url-query: .assets[] | select(.name|contains("x86_64-unknown-linux-gnu"))
+          url-query: .assets[] | select(.name|contains("linux-x86_64"))
             | .browser_download_url
-      - type: archive
-        url: https://github.com/gopher64/gopher64/releases/download/v1.0.7/gopher64-aarch64-unknown-linux-gnu.zip
-        sha256: a7518269a84a5a213c1ff46af11c00da818aba91f05b78b539ea316984f82c51
+      - type: file
+        url: https://github.com/gopher64/gopher64/releases/download/v1.0.7/gopher64-linux-aarch64
+        sha256: 32e3baea42df5c702be00f5f5ea96fb5fe7fc3ec516914ce1757a87c4b855f68
         only-arches:
           - aarch64
         x-checker-data:
@@ -44,7 +44,7 @@ modules:
           type: json
           url: https://api.github.com/repos/gopher64/gopher64/releases/latest
           version-query: .tag_name
-          url-query: .assets[] | select(.name|contains("aarch64-unknown-linux-gnu"))
+          url-query: .assets[] | select(.name|contains("linux-aarch64"))
             | .browser_download_url
       - type: file
         url: https://raw.githubusercontent.com/gopher64/gopher64/52caa9cee3d631a34cf5576cf058cb2335fb2d0c/data/gopher64.svg

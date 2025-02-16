@@ -16,7 +16,7 @@ modules:
   - name: gopher64
     buildsystem: simple
     build-commands:
-      - install -Dm755 gopher64-linux-* -t /app/bin/gopher64
+      - install -Dm755 gopher64-linux-* /app/bin/gopher64
 
       - install -D gopher64.svg -t /app/share/icons/hicolor/scalable/apps
       - install -D io.github.gopher64.gopher64.desktop -t /app/share/applications

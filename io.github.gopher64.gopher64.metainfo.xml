@@ -5,7 +5,7 @@
   <summary>A highly compatible N64 emulator, built-in netplay.</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
-  <content_rating type="oars-1.1" />
+  <content_rating type="oars-1.1"/>
   <developer id="io.github.gopher64">
     <name>gopher64</name>
   </developer>
@@ -38,8 +38,11 @@
     <control>gamepad</control>
   </supports>
   <releases>
-   <release version="v1.0.20" date="2025-07-06">
+   <release version="v1.1.0" date="2025-07-11">
       <description></description>
+   </release>
+   <release version="v1.0.20" date="2025-07-06">
+      <description/>
    </release>
    <release version="v1.0.19" date="2025-07-05">
       <description/>

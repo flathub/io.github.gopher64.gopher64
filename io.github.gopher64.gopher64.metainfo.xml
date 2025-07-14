@@ -2,13 +2,17 @@
 <component type="desktop-application">
   <id>io.github.gopher64.gopher64</id>
   <name>Gopher64</name>
-  <summary>A highly compatible N64 emulator, built-in netplay.</summary>
+  <summary>Highly compatible N64 emulator, built-in netplay</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
   <content_rating type="oars-1.1"/>
   <developer id="io.github.gopher64">
     <name>gopher64</name>
   </developer>
+  <branding>
+    <color type="primary" scheme_preference="light">#cdab8f</color>
+    <color type="primary" scheme_preference="dark">#986a44</color>
+  </branding>
   <launchable type="desktop-id">io.github.gopher64.gopher64.desktop</launchable>
   <url type="homepage">https://github.com/gopher64/gopher64</url>
   <url type="bugtracker">https://github.com/gopher64/gopher64/issues</url>

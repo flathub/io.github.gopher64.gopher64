@@ -46,11 +46,11 @@ modules:
           version-query: .tag_name
           url-query: .assets[] | select(.name|contains("linux-aarch64")) | .browser_download_url
       - type: file
-        url: https://raw.githubusercontent.com/gopher64/gopher64/9f8d5340f45689eb43020e02e30b931fdd919866/data/icon/gopher64_128x128.png
-        sha256: 3bc0fcb7998e2f4760cf9792d4157d1b7a2be9efae8c345386172f2da4d1b642
+        url: https://raw.githubusercontent.com/gopher64/gopher64/49a78a59b429d4f4e0ad833fb6d64e194a0592ec/data/icon/gopher64_128x128.png
+        sha256: 7db3f8df9e7e7f978eae1e88655873adfc4b0fbeb0dfecee12abf9337fdabc0e
       - type: file
-        url: https://raw.githubusercontent.com/gopher64/gopher64/9f8d5340f45689eb43020e02e30b931fdd919866/data/icon/gopher64_256x256.png
-        sha256: 0778f020030af34cff9068005652074e8dc7e2d789874976a5c096c9d97429e3
+        url: https://raw.githubusercontent.com/gopher64/gopher64/49a78a59b429d4f4e0ad833fb6d64e194a0592ec/data/icon/gopher64_256x256.png
+        sha256: 89e5a679d4e24895f6424216e7d1dace4ff917f398cd6148fa7dd79abc577307
       - type: file
         path: io.github.gopher64.gopher64.desktop
       - type: file

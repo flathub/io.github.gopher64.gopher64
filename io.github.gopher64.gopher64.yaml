@@ -1,6 +1,6 @@
 app-id: io.github.gopher64.gopher64
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: gopher64
 rename-icon: gopher64

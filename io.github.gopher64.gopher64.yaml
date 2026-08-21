@@ -23,8 +23,8 @@ modules:
       - install -D io.github.gopher64.gopher64.metainfo.xml -t /app/share/metainfo
     sources:
       - type: file
-        url: https://github.com/gopher64/gopher64/releases/download/v1.1.34/gopher64-linux-x86_64
-        sha256: a184677a738988e153dd8c48c9790d7c5a96f61180b5a524184558a15bb08e68
+        url: https://github.com/gopher64/gopher64/releases/download/v1.1.36/gopher64-linux-x86_64
+        sha256: cd82e537430a6d16bbdec7cb9873828d5a5a2ec23c739ef1e862b1b8abc2af88
         only-arches:
           - x86_64
         x-checker-data:
@@ -34,8 +34,8 @@ modules:
           version-query: .tag_name
           url-query: .assets[] | select(.name|contains("linux-x86_64")) | .browser_download_url
       - type: file
-        url: https://github.com/gopher64/gopher64/releases/download/v1.1.34/gopher64-linux-aarch64
-        sha256: e34d714f9150530927d362445909f0d9a844ae0b162a5ebb974c13d22a60a0bb
+        url: https://github.com/gopher64/gopher64/releases/download/v1.1.36/gopher64-linux-aarch64
+        sha256: 6eacae8e49aa0606da0bd74e152b5982d433c6bb0b7ae892b7ae22e418f15e82
         only-arches:
           - aarch64
         x-checker-data:

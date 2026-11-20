@@ -43,8 +43,12 @@
     <control>gamepad</control>
   </supports>
   <releases>
-   <release version="v1.2.1" date="2026-11-12">
+   <release version="v1.2.2" date="2026-11-20">
+      <url type="details">https://github.com/gopher64/gopher64/releases/tag/v1.2.2</url>
       <description></description>
+   </release>
+   <release version="v1.2.1" date="2026-11-12">
+      <description/>
    </release>
    <release version="v1.1.42" date="2026-10-15">
       <description/>
